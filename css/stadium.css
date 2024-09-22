@@ -1,0 +1,32 @@
+/* Style for stadium names */
+.stadium-link {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+/* Add blue underline on hover */
+.stadium-link:hover {
+    color: #05fa42; /* Change text color on hover */
+}
+
+/* Pseudo-element for custom underline */
+.stadium-link::after {
+    content: ''; /* Create a pseudo-element */
+    display: block;
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the underline */
+    background-color: #05fa42; /* Underline color */
+    position: absolute; /* Position absolute for the underline */
+    left: 0; /* Align to the left */
+    bottom: -4px; /* Adjust position of underline */
+    transform: scaleX(0); /* Hide underline initially */
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+/* Show underline on hover */
+.stadium-link:hover::after {
+    transform: scaleX(1); /* Show underline */
+}

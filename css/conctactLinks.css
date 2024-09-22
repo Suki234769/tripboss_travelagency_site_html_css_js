@@ -1,0 +1,23 @@
+/* Ensure that links appear as blue and underlined */
+.phone, .address {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Optionally, add hover effects */
+.phone:hover, .address:hover {
+    color: darkblue;
+    text-decoration: none; /* Or any other effect you prefer */
+}
+
+/* If using span with a class for email */
+.mail {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Optionally, add hover effects */
+.mail:hover {
+    color: darkblue;
+    text-decoration: none; /* Or any other effect you prefer */
+}

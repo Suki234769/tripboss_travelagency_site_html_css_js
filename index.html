@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TripBoss</title>
+        <title>TripKick</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- font awesome cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <!-- fonts -->
         <link rel = "stylesheet" href = "font/fonts.css">
         <!-- normalize css -->
@@ -16,13 +16,17 @@
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+        <link rel = "stylesheet" href = "css/brandCLR.css">
+        <link rel = "stylesheet" href = "css/stadium.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/fball.jpg">
+        
     </head>
     <body>
         <!-- navbar  -->
         <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
-                    Trip<span>Boss</span>
+                    Trip<span>Kick</span>
                 </a>
 
                 <button type = "button" id = "navbar-show-btn" class = "flex">
@@ -58,21 +62,23 @@
         <header class = "flex">
             <div class = "container">
                 <div class = "header-title">
-                    <h1>Leave Your Footprints</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
+                    <h1>INCREDIBLE STADIUMS</h1>
+                    <p>Here u pick location,date and prices of Stadiums u want to visit.</p>
                 </div>
                 <div class = "header-form">
                     <h2>Choose your Travel location:</h2>
-                    <form class = "flex">
-                        <input type = "text" class = "form-control" placeholder="Destination name">
-                        <input type="date" class = "form-control" placeholder="Date">
-                        <input type="number" class = "form-control" placeholder="Price ($)">
-                        <input type="submit" class = "btn" value = "Search">
+                    <form id="travelForm" class="flex">
+                        <input type="text" id="destination" class="form-control" placeholder="Destination name" required>
+                        <input type="date" id="date" class="form-control" placeholder="Date" required>
+                        <input type="number" id="maxPrice" class="form-control" placeholder="Max Price ($)" required>
+                        <input type="submit" class="btn" value="Search">
                     </form>
+                    <div id="results"></div>
                 </div>
             </div>
         </header>
         <!-- header -->
+    <div class="featured-background">
 
         <!-- featured section -->
         <section id = "featured" class = "py-4">
@@ -84,79 +90,81 @@
 
                 <div class = "featured-row">
                     <div class = "featured-item my-2 shadow">
-                        <img src = "images/featured-reo-de-janeiro-brazil.jpg" alt = "featured place">
+                        <img src = "images/cmpn.jpg" alt = "featured place">
                         <div class = "featured-item-content">
                             <span>
                                 <i class = "fas fa-map-marker-alt"></i>
-                                Reo De Janeiro, Brazil
+                                Camp-Nou , Barcelona , Spain
                             </span>
                             <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                                <p class = "text">The largest stadium in Europe, home to FC Barcelona, electric atmosphere and storied football heritage.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "featured-item my-2 shadow">
-                        <img src = "images/featured-north-bondi-australia.jpg" alt = "featured place">
+                        <img src = "images/santiagoBernbeu.jpg" alt = "featured place">
                         <div class = "featured-item-content">
                             <span>
                                 <i class = "fas fa-map-marker-alt"></i>
-                                North Bondi, Australia
+                                Santiago Bernabeu , Madrid , Spain
                             </span>
                             <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                                <p class = "text">The legendary home of Real Madrid, steeped in history and undergoing modern renovations to match its world-class status.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "featured-item my-2 shadow">
-                        <img src = "images/featured-berlin-germany.jpg" alt = "featured place">
+                        <img src = "images/aa.jpg" alt = "featured place">
                         <div class = "featured-item-content">
                             <span>
                                 <i class = "fas fa-map-marker-alt"></i>
-                                Berlin, Germany
+                                Alianz Arena , München, Germany
                             </span>
                             <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                                <p class = "text">Striking exterior that changes color, home to Bayern Munich architectural icon in world football.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "featured-item my-2 shadow">
-                        <img src = "images/featured-khwaeng-wat-arun-thailand.jpg" alt = "featured place">
+                        <img src = "images/anfield.jpg" alt = "featured place">
                         <div class = "featured-item-content">
                             <span>
                                 <i class = "fas fa-map-marker-alt"></i>
-                                Khwaeng wat arun, thailand
+                                Anfield , Liverpool , UK
                             </span>
                             <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                                <p class = "text">Most atmospheric stadium in Europe, Anfield is revered for its passionate Liverpool FC supporters.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "featured-item my-2 shadow">
-                        <img src = "images/featured-rome-italy.jpg" alt = "featured place">
+                        <img src = "images/san siro.jpg" alt = "featured place">
                         <div class = "featured-item-content">
                             <span>
                                 <i class = "fas fa-map-marker-alt"></i>
-                                Rome, Italy
+                                San Siro , Milan , Italy
                             </span>
                             <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                                <p class = "text">Historic home of AC Milan and Inter, renowned for its passionate atmosphere and iconic design.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "featured-item my-2 shadow">
-                        <img src = "images/featured-fuvahmulah-maldives.jpg" alt = "featured place">
+                        <img src = "images/stdf.jpg" alt = "featured place">
                         <div class = "featured-item-content">
                             <span>
                                 <i class = "fas fa-map-marker-alt"></i>
-                                fuvahmulah, maldives
+                                Stade de France , Saint-Denis , France
                             </span>
                             <div>
-                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero soluta illum, harum amet excepturi sit?</p>
+                                <p class = "text">France’s largest stadium, hosting international football , including the 1998 FIFA WC final.
+
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -178,8 +186,8 @@
                         <span class = "services-icon">
                             <i class = "fas fa-hotel"></i>
                         </span>
-                        <h3>Luxurious Hotel</h3>
-                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                        <h3>Luxurious Hotel near stadiums</h3>
+                        <p class = "text">Some of finest hotels provides by our partners.</p>
                         <a href = "#" class = "btn">Read more</a>
                     </div>
 
@@ -187,8 +195,8 @@
                         <span class = "services-icon">
                             <i class = "fas fa-map-marked-alt"></i>
                         </span>
-                        <h3>Trave Guide</h3>
-                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                        <h3>Travel Guide</h3>
+                        <p class = "text">Travel guide for better navigation</p>
                         <a href = "#" class = "btn">Read more</a>
                     </div>
 
@@ -196,8 +204,8 @@
                         <span class = "services-icon">
                             <i class = "fas fa-money-bill"></i>
                         </span>
-                        <h3>Suitable Price</h3>
-                        <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                        <h3>Prices on travel form , fixed</h3>
+                        <p class = "text">Prices are displayed in out travel form.</p>
                         <a href = "#" class = "btn">Read more</a>
                     </div>
                 </div>
@@ -215,34 +223,37 @@
 
                 <div class = "test-row">
                     <div class = "test-item">
-                        <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis, asperiores, velit iste eos officiis tempora magni quaerat quo consectetur expedita cum recusandae facere nam voluptate minus iusto eum. Delectus!</p>
+                        <p class = "text">"As I walk the corridors of the Emirates Stadium, I feel a wave of nostalgia. 
+                            These walls witnessed the transformation of Arsenal, and I am proud of the legacy we built together during those remarkable years."</p>
                         <div class = "test-item-info">
-                            <img src = "images/test-1.jpg" alt = "testimonial">
+                            <img src = "images/ars.jpg" alt = "testimonial">
                             <div>
-                                <h3>Kevin Wilson</h3>
-                                <p class = "text">Trip to Brazil</p>
+                                <h3>Arsène Wenger</h3>
+                                <p class = "text">Trip to England</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "test-item">
-                        <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ut dolores tenetur harum deserunt. Maxime tenetur consectetur recusandae nobis fugit iusto natus quibusdam nulla!</p>
+                        <p class = "text"> "As I return to the Santiago Bernabéu, I can't help but reflect on the incredible journey I had here with Real Madrid. 
+                            The thrilling moments and unforgettable victories will always hold a special place in my heart."</p>
                         <div class = "test-item-info">
-                            <img src = "images/test-2.jpg" alt = "testimonial">
+                            <img src = "images/mouri.jpg" alt = "testimonial">
                             <div>
-                                <h3>Ben Davis</h3>
-                                <p class = "text">Trip to Maldives</p>
+                                <h3>José Mourinho</h3>
+                                <p class = "text">Trip to Spain</p>
                             </div>
                         </div>
                     </div>
 
                     <div class = "test-item">
-                        <p class = "text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sapiente amet expedita quae autem deleniti quo magni numquam facilis soluta dicta, praesentium ipsum, quos optio sed quibusdam! Reprehenderit recusandae provident id nemo!</p>
+                        <p class = "text">"Walking through Camp Nou brings back so many memories. 
+                            This is where my managerial career truly began, and I cherish every exhilarating match and legendary player that made my time here so special."</p>
                         <div class = "test-item-info">
-                            <img src = "images/test-3.jpg" alt = "testimonial">
+                            <img src = "images/pepg.jpg" alt = "testimonial">
                             <div>
-                                <h3>Jaura Jones</h3>
-                                <p class = "text">Trip to Thailand</p>
+                                <h3>Pep Guardiola</h3>
+                                <p class = "text">Trip to Spain</p>
                             </div>
                         </div>
                     </div>
@@ -255,7 +266,7 @@
         <section id = "video">
             <div class = "video-wrapper flex">
                 <video loop>
-                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                    <source src = "videos/video1.mp4" type = "video/mp4">
                 </video>
                 <button type = "button" id = "play-btn">
                     <i class = "fas fa-play"></i>
@@ -269,9 +280,9 @@
             <div class = "container footer-row">
                 <div class = "footer-item">
                     <a href = "index.html" class = "site-brand">
-                        Trip<span>Boss</span>
+                        Trip<span>Kick</span>
                     </a>
-                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+                    <p class = "text">Short blogs crafted for readers exploring the world's top stadiums. From Mbappe to Dani Olmo, covering the best of the best. These blogs feature the latest insights and memories of special past events.</p>
                 </div>
 
                 <div class = "footer-item">
@@ -299,46 +310,40 @@
                         </li>
                         <li>
                             <a href = "#">
-                                <i class = "fab fa-google-plus"></i>
+                                <i class = "fab fa-github"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class = "footer-item">
-                    <h2>Popular Places:</h2>
+                    <h2>Places of these events(more about stadiums):</h2>
                     <ul>
-                        <li><a href = "#">Thailand</a></li>
-                        <li><a href = "#">Australia</a></li>
-                        <li><a href = "#">Maldives</a></li>
-                        <li><a href = "#">Switzerland</a></li>
-                        <li><a href = "#">Germany</a></li>
+                        <li><a href = "https://youtu.be/90Bfo0qwDQo?si=Mcq-L5jVMUgymLyS">Quatar</a></li>
+                        <li><a href = "https://youtu.be/XjrEwr4oSeM?si=5uHYPU4sLo3NP0x0">France</a></li>
+                        <li><a href = "https://youtu.be/LHoqGq0y4bI?si=Hm7uClcfmYT5DgXt">Turkey</a></li>
+                        <li><a href = "https://youtu.be/gQNG1Plv_yU?si=EMS0i0YZ1YQn0xdR">United Kingdom</a></li>
+                        <li><a href = "https://youtu.be/NM2045nB6bg?si=IkZ_Rs4v1gRHRHOq">Germany</a></li>
                     </ul>
                 </div>
 
                 <div class = "subscribe-form footer-item">
-                    <h2>Subscribe for Newsletter!</h2>
-                    <form class = "flex">
-                        <input type = "email" placeholder="Enter Email" class = "form-control">
-                        <input type = "submit" class = "btn" value = "Subscribe">
+                    <h2>Subscribe for a possible blog adaptation</h2>
+                    <form class="flex" id="subscribeForm">
+                        <input type="email" placeholder="Enter Email" class="form-control" id="email">
+                        <input type="submit" class="btn" value="Subscribe">
                     </form>
+                    <p id="message"></p> <!-- Message for winning or losing -->
                 </div>
             </div>
         </footer>
         <!-- end of footer -->
 
         <!-- js -->
+        
         <script src = "js/script.js"></script>
-        <script>
-            // play/pause video
-            let video = document.querySelector('.video-wrapper video');
-            document.getElementById('play-btn').addEventListener('click', () => {
-                if(video.paused){
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            });
-        </script>
+        <script src = "js/video.js"></script>
+        <script src = "js/stadiums.js"></script>
+        <script src = "js/lotterySub.js"></script>
     </body>
 </html>

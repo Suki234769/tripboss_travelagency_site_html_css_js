@@ -3,26 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TripBoss</title>
+        <title>TripKick</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- font awesome cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <!-- fonts -->
         <link rel = "stylesheet" href = "font/fonts.css">
         <!-- normalize css -->
         <link rel = "stylesheet" href = "css/normalize.css">
         <!-- custom css -->
+        <link rel = "stylesheet" href = "css/conctactLinks.css">
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+        <link rel = "stylesheet" href = "css/brandCLR.css">
+        <link rel="shortcut icon" type="x-icon" href="images/fball.jpg">
     </head>
     <body>
         <!-- navbar  -->
         <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
-                    Trip<span>Boss</span>
+                    Trip<span>Kick</span>
                 </a>
 
                 <button type = "button" id = "navbar-show-btn" class = "flex">
@@ -59,55 +62,61 @@
             <div class = "container">
                 <div class = "header-title">
                     <h1>Contact</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
+                    <p>Here u can send ur messages and we will review them in short time.</p>
                 </div>
             </div>
         </header>
         <!-- header -->
 
         <!-- contact section -->
-        <section id = "contact" class = "py-4">
-            <div class = "container">
-                <div class = "title-wrap">
-                    <span class = "sm-title">get in touch with us</span>
-                    <h2 class = "lg-title">contact us</h2>
+        <section id="contact" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">Get in touch with us</span>
+                    <h2 class="lg-title">Contact Us</h2>
                 </div>
-
-                <div class = "contact-row">
-                    <div class = "contact-left">
-                        <form class = "contact-form">
-                            <input type = "text" class = "form-control" placeholder="Your name">
-                            <input type = "email" class = "form-control" placeholder="Your email">
-                            <textarea rows = "4" class = "form-control" placeholder="Your message" style = "resize: none;"></textarea>
-                            <input type = "submit" class = "btn" value = "Send message">
+        
+                <div class="contact-row">
+                    <div class="contact-left">
+                        <form id="contact-form" class="contact-form">
+                            <input type="text" id="name" class="form-control" placeholder="Your name">
+                            <input type="email" id="email" class="form-control" placeholder="Your email">
+                            <textarea id="message" rows="4" class="form-control" placeholder="Your message" style="resize: none;"></textarea>
+                            <input type="submit" class="btn" value="Send message">
                         </form>
                     </div>
-                    <div class = "contact-right my-2">
-                        <div class = "contact-item">
-                            <span class = "contact-icon flex">
-                                <i class = "fa fa-phone-alt"></i>
+                    <div class="contact-right my-2">
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-phone-alt"></i>
                             </span>
                             <div>
                                 <span>Phone</span>
-                                <p class = "text">+01-584-886-009</p>
+                                <p class="text">
+                                    <a href="tel:+01584886009" class="phone">+01-584-886-009</a>
+                                </p>
                             </div>
                         </div>
-                        <div class = "contact-item">
-                            <span class = "contact-icon flex">
-                                <i class = "fa fa-map-marked-alt"></i>
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-map-marked-alt"></i>
                             </span>
                             <div>
                                 <span>Address</span>
-                                <p class = "text">102 East 22nd Street, NY</p>
+                                <p class="text">
+                                    <a href="https://www.google.com/maps/place/UL.Vjekoslava Klaića 7,+CRO" class="address">UL.Vjekoslava Klaića 7, CRO</a>
+                                </p>
                             </div>
                         </div>
-                        <div class = "contact-item">
-                            <span class = "contact-icon flex">
-                                <i class = "fa fa-envelope"></i>
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-envelope"></i>
                             </span>
                             <div>
                                 <span>Message</span>
-                                <p class = "text">info@tripboss.com</p>
+                                <p class="text">
+                                    <a href="mailto:jan.sukser@gmail.com" class="mail">jan.sukser@gmail.com</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -122,9 +131,9 @@
             <div class = "container footer-row">
                 <div class = "footer-item">
                     <a href = "index.html" class = "site-brand">
-                        Trip<span>Boss</span>
+                        Trip<span>Kick</span>
                     </a>
-                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+                    <p class = "text">Short blogs crafted for readers exploring the world's top stadiums. From Mbappe to Dani Olmo, covering the best of the best. These blogs feature the latest insights and memories of special past events.</p>
                 </div>
 
                 <div class = "footer-item">
@@ -152,29 +161,30 @@
                         </li>
                         <li>
                             <a href = "#">
-                                <i class = "fab fa-google-plus"></i>
+                                <i class = "fab fa-github"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class = "footer-item">
-                    <h2>Popular Places:</h2>
+                    <h2>Places of these events(more about stadiums):</h2>
                     <ul>
-                        <li><a href = "#">Thailand</a></li>
-                        <li><a href = "#">Australia</a></li>
-                        <li><a href = "#">Maldives</a></li>
-                        <li><a href = "#">Switzerland</a></li>
-                        <li><a href = "#">Germany</a></li>
+                        <li><a href = "https://youtu.be/90Bfo0qwDQo?si=Mcq-L5jVMUgymLyS">Quatar</a></li>
+                        <li><a href = "https://youtu.be/XjrEwr4oSeM?si=5uHYPU4sLo3NP0x0">France</a></li>
+                        <li><a href = "https://youtu.be/LHoqGq0y4bI?si=Hm7uClcfmYT5DgXt">Turkey</a></li>
+                        <li><a href = "https://youtu.be/gQNG1Plv_yU?si=EMS0i0YZ1YQn0xdR">United Kingdom</a></li>
+                        <li><a href = "https://youtu.be/NM2045nB6bg?si=IkZ_Rs4v1gRHRHOq">Germany</a></li>
                     </ul>
                 </div>
 
                 <div class = "subscribe-form footer-item">
-                    <h2>Subscribe for Newsletter!</h2>
-                    <form class = "flex">
-                        <input type = "email" placeholder="Enter Email" class = "form-control">
-                        <input type = "submit" class = "btn" value = "Subscribe">
+                    <h2>Subscribe for a possible blog adaptation</h2>
+                    <form class="flex" id="subscribeForm">
+                        <input type="email" placeholder="Enter Email" class="form-control" id="email">
+                        <input type="submit" class="btn" value="Subscribe">
                     </form>
+                    <p id="message"></p> <!-- Message for winning or losing -->
                 </div>
             </div>
         </footer>
@@ -182,8 +192,7 @@
 
         <!-- js -->
         <script src = "js/script.js"></script>
-        <script>
-            
-        </script>
+        <script src = "js/contact.js"></script>
+        <script src = "js/lotterySub.js"></script>
     </body>
 </html>

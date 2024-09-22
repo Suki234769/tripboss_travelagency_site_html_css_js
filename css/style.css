@@ -1,4 +1,5 @@
 :root{
+    --red: #fa0511;
     --green: #1ec6b6;
     --light-grey: #f7f7f7;
     --dark: #0e1010;
@@ -18,7 +19,7 @@
             justify-content: space-between;
 }
 .site-brand{
-    color: #fff;
+    color: #05fa42;
     font-size: 2.4rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -103,9 +104,11 @@
 header{
     min-height: 100vh;
     padding-top: 7rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/header-bg.jpg) center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/header-bg.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/header-bg.jpg) center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/stadium2.jpg) center/cover no-repeat;
+
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/stadium2.jpg) center/cover no-repeat;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/stadium2.jpg) center/cover no-repeat;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -280,7 +283,7 @@ header{
 
 /* change background on scroll */
 .navbar-cng{
-    background-color: #fff;
+    background-color: #05fa42;
     -webkit-box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
             box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
     -webkit-transition: var(--trans);
@@ -318,12 +321,17 @@ header{
     background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
 }
+
+.featured-background {
+    background-color: var(--green); 
+    padding: 0px 0;
+}
 .featured-item-content{
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 2;
-    color: #fff;
+    color: #05fa42;
     width: 100%;
     padding: 1rem;
     -webkit-transform: translateY(68%);
@@ -353,9 +361,9 @@ header{
 
 /* services */
 #services{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/services-bg.jpg) center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/services-bg.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/services-bg.jpg) center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/oldt.jpg) center/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/oldt.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/oldt.jpg) center/cover no-repeat;
 }
 #services *{
     color: #fff;
@@ -368,6 +376,8 @@ header{
 .services-icon{
     font-size: 3.2rem;
 }
+
+
 .services-item h3{
     margin: 1rem 0;
     font-size: 1.6rem;
@@ -379,7 +389,7 @@ header{
 
 /* testimonials */
 #testimonials{
-    background-color: var(--light-grey);
+    background-color: var(--green);
 }
 .test-item{
     border: 2px solid var(--light-grey);
@@ -438,7 +448,7 @@ header{
     z-index: 5;
     width: 70px;
     height: 70px;
-    background-color: var(--green);
+    background-color: var(--red);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -580,6 +590,12 @@ header.header-sm{
     background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
 }
+
+.gallery-background {
+    background-color: var(--green); /* Light gray background */
+    padding: 0px 0;
+}
+
 .gallery-item img{
     -webkit-transition: var(--trans);
     -o-transition: var(--trans);
@@ -598,7 +614,7 @@ header.header-sm{
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     font-size: 2rem;
-    color: #fff;
+    color: #05fa42;
     z-index: 2;
     opacity: 0;
     -webkit-transition: var(--trans);
@@ -636,7 +652,7 @@ header.header-sm{
 #img-modal-box button{
     position: absolute;
     font-size: 1.4rem;
-    background-color: #fff;
+    background-color: #05fa42;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -726,7 +742,7 @@ header.header-sm{
 /* ### BLOG PAGE ### */
 /* blog */
 #blog{
-    background-color: var(--light-grey);
+    background-color: var(--green);
 }
 .blog-item{
     background-color: #fff;
@@ -740,7 +756,7 @@ header.header-sm{
 .blog-date{
     position: absolute;
     background-color: var(--green);
-    color: #fff;
+    color: #0000FF;
     padding: 0.5rem;
     height: 38px;
     min-width: 160px;
@@ -784,11 +800,16 @@ header.header-sm{
     margin-bottom: 2.5rem;
 }
 
+.about-background {
+    background-color: var(--green); 
+    padding: 0px 0;
+}
+
 /* facts */
 #facts{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/facts-img.jpg) center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/facts-img.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/facts-img.jpg) center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/stdum.jpg) center/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/stdum.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/stdum.jpg) center/cover no-repeat;
     min-height: 80vh;
 }
 #facts .title-wrap{

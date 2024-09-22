@@ -1,0 +1,54 @@
+/* Facebook */
+a i.fab.fa-facebook-f {
+    color: #4267B2; /* Facebook blue color */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover i.fab.fa-facebook-f {
+    color: #2d4373; /* Darker shade of Facebook blue */
+}
+
+/* Instagram */
+a i.fab.fa-instagram {
+    color: #C13584; /* Instagram pink color */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover i.fab.fa-instagram {
+    color: #e1306c; /* Slightly darker pink for hover effect */
+}
+
+/* Twitter */
+a i.fab.fa-twitter {
+    color: #1DA1F2; /* Twitter blue color */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover i.fab.fa-twitter {
+    color: #0d95e8; /* Darker shade of Twitter blue */
+}
+
+/* Pinterest */
+a i.fab.fa-pinterest {
+    color: #E60023; /* Pinterest red color */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover i.fab.fa-pinterest {
+    color: #b72e2f; /* Darker shade of Pinterest red */
+}
+
+/* GitHub */
+a i.fab.fa-github {
+    color: #ffffff; /* White color for black background */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover i.fab.fa-github {
+    color: #cccccc; /* Slightly lighter gray on hover */
+}
